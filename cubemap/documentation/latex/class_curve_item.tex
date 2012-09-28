@@ -1,0 +1,243 @@
+\hypertarget{class_curve_item}{
+\section{\-Curve\-Item \-Class \-Reference}
+\label{class_curve_item}\index{\-Curve\-Item@{\-Curve\-Item}}
+}
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries \-Interpolation} \{ {\bfseries \-Linear\-Interpolation} =  0, 
+{\bfseries \-Bezier\-Interpolation} =  1, 
+{\bfseries \-Constant\-Interpolation} =  2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curve_item_ac1c07b01e58ea3360ee253f7b32998ce}{
+void {\bfseries counter\-Scene\-Scale} (\-Q\-Point\-F scene\-Scale)}
+\label{class_curve_item_ac1c07b01e58ea3360ee253f7b32998ce}
+
+\item 
+\hypertarget{class_curve_item_a946ee28a57ab487a17653c4b29520251}{
+void {\bfseries update\-Path} ()}
+\label{class_curve_item_a946ee28a57ab487a17653c4b29520251}
+
+\item 
+\hypertarget{class_curve_item_a2ecb0c62f98642379bc1a52a5be71b24}{
+void {\bfseries no\-Handle} ()}
+\label{class_curve_item_a2ecb0c62f98642379bc1a52a5be71b24}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curve_item_a3776ded2ef85a9404bae91401f135186}{
+{\bfseries \-Curve\-Item} (\hyperlink{class_curve_variable}{\-Curve\-Variable} $\ast$variable, \-Q\-Graphics\-Item $\ast$parent=0, \-Q\-Object $\ast$objparent=0)}
+\label{class_curve_item_a3776ded2ef85a9404bae91401f135186}
+
+\item 
+\hypertarget{class_curve_item_a81f5dc3ba8f16ab7c33767c45cf3674e}{
+{\bfseries \-Curve\-Item} (\hyperlink{class_curve_variable}{\-Curve\-Variable} $\ast$variable, \hyperlink{class_curve_item}{\-Curve\-Item} $\ast$previous, \-Q\-Graphics\-Item $\ast$parent=0, \-Q\-Object $\ast$objparent=0)}
+\label{class_curve_item_a81f5dc3ba8f16ab7c33767c45cf3674e}
+
+\item 
+\hypertarget{class_curve_item_acd479a4a78ba9640661dd0a2e883f313}{
+void {\bfseries set\-Pos} (const \-Q\-Point\-F \&pos)}
+\label{class_curve_item_acd479a4a78ba9640661dd0a2e883f313}
+
+\item 
+\hypertarget{class_curve_item_a1f0382e57b7064168a4c3077e183a7ee}{
+\-Q\-Point\-F {\bfseries pos} () const }
+\label{class_curve_item_a1f0382e57b7064168a4c3077e183a7ee}
+
+\item 
+\hypertarget{class_curve_item_a67cf05763ff8007d88ba02e90d8a8260}{
+\hyperlink{class_curve_item}{\-Curve\-Item} $\ast$ {\bfseries previous\-Item} () const }
+\label{class_curve_item_a67cf05763ff8007d88ba02e90d8a8260}
+
+\item 
+\hypertarget{class_curve_item_ab75b74d9706fb49131f55dae96dfcac2}{
+\hyperlink{class_curve_item}{\-Curve\-Item} $\ast$ {\bfseries next\-Item} () const }
+\label{class_curve_item_ab75b74d9706fb49131f55dae96dfcac2}
+
+\item 
+\hypertarget{class_curve_item_a35804c0dbb4136e655008e52befd4396}{
+void {\bfseries set\-Previous\-Item} (\hyperlink{class_curve_item}{\-Curve\-Item} $\ast$previous)}
+\label{class_curve_item_a35804c0dbb4136e655008e52befd4396}
+
+\item 
+\hypertarget{class_curve_item_a3fe749bc2f644abc7231d7ac892a872e}{
+void {\bfseries set\-Next\-Item} (\hyperlink{class_curve_item}{\-Curve\-Item} $\ast$next)}
+\label{class_curve_item_a3fe749bc2f644abc7231d7ac892a872e}
+
+\item 
+\hypertarget{class_curve_item_a5afcc9d03cb7cf81ab846315375efcae}{
+\hyperlink{class_curve_handle_item}{\-Curve\-Handle\-Item} $\ast$ {\bfseries control\-Point\-Handle} () const }
+\label{class_curve_item_a5afcc9d03cb7cf81ab846315375efcae}
+
+\item 
+\hypertarget{class_curve_item_a4598432bda7aac82f18ac8cb572c4b61}{
+\-Q\-Point\-F {\bfseries control\-Point} (bool scene\-Coord=false) const }
+\label{class_curve_item_a4598432bda7aac82f18ac8cb572c4b61}
+
+\item 
+\hypertarget{class_curve_item_aeb826c22f4bc82cc45ffd50c1367ca0e}{
+void {\bfseries show\-Control\-Point} (bool show=true)}
+\label{class_curve_item_aeb826c22f4bc82cc45ffd50c1367ca0e}
+
+\item 
+\hypertarget{class_curve_item_a764d411125852777d3be36853e3a13ca}{
+void {\bfseries set\-Scene} (\-Q\-Graphics\-Scene $\ast$scene)}
+\label{class_curve_item_a764d411125852777d3be36853e3a13ca}
+
+\item 
+\hypertarget{class_curve_item_acaf33d5a5c0391d42be774b1e54ec2b0}{
+void {\bfseries set\-Interpolation} (\-Interpolation interpolation)}
+\label{class_curve_item_acaf33d5a5c0391d42be774b1e54ec2b0}
+
+\item 
+\hypertarget{class_curve_item_a2e5098fc089cfa4a6b0b459ca87d5dc1}{
+\-Interpolation {\bfseries interpolation} ()}
+\label{class_curve_item_a2e5098fc089cfa4a6b0b459ca87d5dc1}
+
+\item 
+\hypertarget{class_curve_item_aa56d8a522afbdb5e0fb5d29148ddef3c}{
+void {\bfseries detach} (\hyperlink{class_curve_item}{\-Curve\-Item} $\ast$caller=\-N\-U\-L\-L)}
+\label{class_curve_item_aa56d8a522afbdb5e0fb5d29148ddef3c}
+
+\item 
+\hypertarget{class_curve_item_a9cc4a042c9b3eb4ab0625187bac2efa6}{
+void {\bfseries move\-Point} (int point)}
+\label{class_curve_item_a9cc4a042c9b3eb4ab0625187bac2efa6}
+
+\item 
+\hypertarget{class_curve_item_a4d8cc1756881f75029a94acd13170aca}{
+\-Q\-Point\-F {\bfseries constrain\-Handle} (int h, \-Q\-Point\-F pos)}
+\label{class_curve_item_a4d8cc1756881f75029a94acd13170aca}
+
+\item 
+\hypertarget{class_curve_item_a20875d758d4a04ca84e4018011f6a6d8}{
+\hyperlink{class_curve_item}{\-Curve\-Item} $\ast$ {\bfseries add\-Segment} (\-Q\-Point\-F point)}
+\label{class_curve_item_a20875d758d4a04ca84e4018011f6a6d8}
+
+\item 
+\hypertarget{class_curve_item_a5405a3758f07e1e603bcfbe83ed005cc}{
+void {\bfseries delete\-Segment} ()}
+\label{class_curve_item_a5405a3758f07e1e603bcfbe83ed005cc}
+
+\item 
+\hypertarget{class_curve_item_ab43cebda5672404d0c5f4a711c579900}{
+bool {\bfseries is\-Active\-Curve} () const }
+\label{class_curve_item_ab43cebda5672404d0c5f4a711c579900}
+
+\item 
+\hypertarget{class_curve_item_a544beb99f7076029a851ed078dc850c6}{
+void {\bfseries activate\-Curve} (bool a=true, \hyperlink{class_curve_item}{\-Curve\-Item} $\ast$caller=\-N\-U\-L\-L)}
+\label{class_curve_item_a544beb99f7076029a851ed078dc850c6}
+
+\item 
+\hypertarget{class_curve_item_a42bed54782a7f9fa35f49388f585df90}{
+float {\bfseries value\-At} (float coord\-X)}
+\label{class_curve_item_a42bed54782a7f9fa35f49388f585df90}
+
+\item 
+\hypertarget{class_curve_item_a3dbd9bcf40c4e2ba9de3fb1ace152e17}{
+\hyperlink{class_curve_item}{\-Curve\-Item} $\ast$ {\bfseries curve\-At} (float coord\-X)}
+\label{class_curve_item_a3dbd9bcf40c4e2ba9de3fb1ace152e17}
+
+\item 
+\hypertarget{class_curve_item_a73e4c6ec81e60870b0a8bc04c45ad26a}{
+void {\bfseries set\-Visible} (bool visible, \hyperlink{class_curve_item}{\-Curve\-Item} $\ast$caller)}
+\label{class_curve_item_a73e4c6ec81e60870b0a8bc04c45ad26a}
+
+\item 
+\hypertarget{class_curve_item_a7e905d23afdd1de68a6dd3f0b0d497d6}{
+void {\bfseries set\-Visible} (bool visible)}
+\label{class_curve_item_a7e905d23afdd1de68a6dd3f0b0d497d6}
+
+\item 
+\hypertarget{class_curve_item_a8103b82a274a0ba6176d5b343c910595}{
+void {\bfseries set\-Color} (\-Q\-Color col, \hyperlink{class_curve_item}{\-Curve\-Item} $\ast$caller=\-N\-U\-L\-L)}
+\label{class_curve_item_a8103b82a274a0ba6176d5b343c910595}
+
+\item 
+\hypertarget{class_curve_item_a42c1c3d20fa9c2a1ef6b790dc53b0d89}{
+\hyperlink{class_curve_variable}{\-Curve\-Variable} $\ast$ {\bfseries curve\-Variable} () const }
+\label{class_curve_item_a42c1c3d20fa9c2a1ef6b790dc53b0d89}
+
+\item 
+\hypertarget{class_curve_item_a2cc3801f509b83aa12a8126e9cfa701f}{
+\hyperlink{class_curve_item}{\-Curve\-Item} $\ast$ {\bfseries is\-Curve\-Start} (float x, float tolerance=0, \hyperlink{class_curve_item}{\-Curve\-Item} $\ast$caller=\-N\-U\-L\-L)}
+\label{class_curve_item_a2cc3801f509b83aa12a8126e9cfa701f}
+
+\item 
+\hypertarget{class_curve_item_a30603d8e04b3d1a480a6026e42df3fd8}{
+void {\bfseries set\-Enabled} (bool enabled)}
+\label{class_curve_item_a30603d8e04b3d1a480a6026e42df3fd8}
+
+\item 
+\hypertarget{class_curve_item_adbe885d72e38fb9a39ce3e3f8729575d}{
+void {\bfseries set\-Enabled} (bool enabled, \hyperlink{class_curve_item}{\-Curve\-Item} $\ast$caller)}
+\label{class_curve_item_adbe885d72e38fb9a39ce3e3f8729575d}
+
+\item 
+\hypertarget{class_curve_item_a5ddd322756e6e5ce508680aada6e113d}{
+void {\bfseries move\-Control\-Point1} (\-Q\-Point\-F move\-To)}
+\label{class_curve_item_a5ddd322756e6e5ce508680aada6e113d}
+
+\item 
+\hypertarget{class_curve_item_a581449673a7d75249cada7353a9b9d91}{
+void {\bfseries move\-Control\-Point2} (\-Q\-Point\-F move\-To)}
+\label{class_curve_item_a581449673a7d75249cada7353a9b9d91}
+
+\item 
+\hypertarget{class_curve_item_af94192a629fbfadfb38e717066e2deb3}{
+\-Q\-Point\-F {\bfseries get\-Control\-Point1} ()}
+\label{class_curve_item_af94192a629fbfadfb38e717066e2deb3}
+
+\item 
+\hypertarget{class_curve_item_a6bbca83729ad7147d119b4ed9b2ca891}{
+\-Q\-Point\-F {\bfseries get\-Control\-Point2} ()}
+\label{class_curve_item_a6bbca83729ad7147d119b4ed9b2ca891}
+
+\item 
+\hypertarget{class_curve_item_af98b6c314bba5f669e3c93b286d0dfb6}{
+void {\bfseries get\-Change\-Range} (float $\ast$min, float $\ast$max)}
+\label{class_curve_item_af98b6c314bba5f669e3c93b286d0dfb6}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curve_item_a053e3bd21310fd3b9bf21c73d5db823d}{
+static float {\bfseries active\-Curve\-Width} = 5.\-0}
+\label{class_curve_item_a053e3bd21310fd3b9bf21c73d5db823d}
+
+\item 
+\hypertarget{class_curve_item_ad52ea9ed024b921b2fee6af4cf72a371}{
+static float {\bfseries inactive\-Curve\-Width} = 2.\-0}
+\label{class_curve_item_ad52ea9ed024b921b2fee6af4cf72a371}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curve_item_ae1f00b18dab0e9b5578fb201d57f7c47}{
+\hyperlink{class_curve_item}{\-Curve\-Item} $\ast$ {\bfseries create\-Curve} (\-Q\-Point\-F p)}
+\label{class_curve_item_ae1f00b18dab0e9b5578fb201d57f7c47}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curve_item_adb37dd4eaa82b1c96c8db03e94da6b59}{
+\hyperlink{class_curve_variable}{\-Curve\-Variable} $\ast$ {\bfseries variable}}
+\label{class_curve_item_adb37dd4eaa82b1c96c8db03e94da6b59}
+
+\end{DoxyCompactItemize}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Common/curveitem.\-h\item 
+\-Common/curveitem.\-cpp\end{DoxyCompactItemize}

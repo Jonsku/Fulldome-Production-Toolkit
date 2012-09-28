@@ -1,0 +1,122 @@
+\hypertarget{class_main_widget}{
+\section{\-Main\-Widget \-Class \-Reference}
+\label{class_main_widget}\index{\-Main\-Widget@{\-Main\-Widget}}
+}
+
+
+{\ttfamily \#include $<$mainwidget.\-h$>$}
+
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_widget_abe818c864bcdc88ec88d8dbde2d43023}{set\-Editor\-Range} (int frame\-Num)
+\item 
+void \hyperlink{class_main_widget_a8a47d66fca458e2aa71de66354a7b75a}{save} ()
+\item 
+void \hyperlink{class_main_widget_a8e2b0a1d2401a7f7e0e83a2541a6614b}{save\-As} ()
+\item 
+void \hyperlink{class_main_widget_af232b6a9c032049b200a6c16f6ea651c}{load} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_widget_a326fee5088b7cebaa102ed5332dd59ee}{\-Main\-Widget} (\-Q\-Widget $\ast$parent=0)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_main_widget_a9eca77d69ccf6c2d70f4eea335b6e30c}{
+\hyperlink{class_cube_map_preview}{\-Cube\-Map\-Preview} $\ast$ \hyperlink{class_main_widget_a9eca77d69ccf6c2d70f4eea335b6e30c}{preview}}
+\label{class_main_widget_a9eca77d69ccf6c2d70f4eea335b6e30c}
+
+\begin{DoxyCompactList}\small\item\em \-A pointer to the real-\/time fisheye preview module. \-See \hyperlink{class_cube_map_preview}{\-Cube\-Map\-Preview}. \end{DoxyCompactList}\item 
+\hypertarget{class_main_widget_a6eb8e8f4d3a39e7ee0a4bc1775086437}{
+\hyperlink{class_cube_map_loader}{\-Cube\-Map\-Loader} $\ast$ \hyperlink{class_main_widget_a6eb8e8f4d3a39e7ee0a4bc1775086437}{loader}}
+\label{class_main_widget_a6eb8e8f4d3a39e7ee0a4bc1775086437}
+
+\begin{DoxyCompactList}\small\item\em \-A pointer to the cube maps loader module. \-See \hyperlink{class_cube_map_loader}{\-Cube\-Map\-Loader}. \end{DoxyCompactList}\item 
+\hypertarget{class_main_widget_aeb9523ae4024fa33c969ccef6ca52db2}{
+\hyperlink{class_curve_editor}{\-Curve\-Editor} $\ast$ \hyperlink{class_main_widget_aeb9523ae4024fa33c969ccef6ca52db2}{curve\-Editor}}
+\label{class_main_widget_aeb9523ae4024fa33c969ccef6ca52db2}
+
+\begin{DoxyCompactList}\small\item\em \-A pointer to the interpolation curve editor module. \-See \hyperlink{class_curve_editor}{\-Curve\-Editor}. \end{DoxyCompactList}\item 
+\hypertarget{class_main_widget_a46b4339b130ae53c8312121c452da407}{
+\hyperlink{class_i_o_widget}{\-I\-O\-Widget} $\ast$ \hyperlink{class_main_widget_a46b4339b130ae53c8312121c452da407}{import\-Export}}
+\label{class_main_widget_a46b4339b130ae53c8312121c452da407}
+
+\begin{DoxyCompactList}\small\item\em \-A pointer to the rendering settings module. \-See \hyperlink{class_i_o_widget}{\-I\-O\-Widget}. \end{DoxyCompactList}\item 
+\hypertarget{class_main_widget_a67a259e93772471f1007a4ae305c8863}{
+\hyperlink{class_time_line}{\-Time\-Line} $\ast$ \hyperlink{class_main_widget_a67a259e93772471f1007a4ae305c8863}{time\-Line}}
+\label{class_main_widget_a67a259e93772471f1007a4ae305c8863}
+
+\begin{DoxyCompactList}\small\item\em \-A pointer to the timeline module. \-See \hyperlink{class_time_line}{\-Time\-Line}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-The main widget initializes all the modules of the application and handles project saving and loading from the {\itshape \-File\/} menu. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_main_widget_a326fee5088b7cebaa102ed5332dd59ee}{
+\index{\-Main\-Widget@{\-Main\-Widget}!\-Main\-Widget@{\-Main\-Widget}}
+\index{\-Main\-Widget@{\-Main\-Widget}!MainWidget@{\-Main\-Widget}}
+\subsubsection[{\-Main\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}\-Main\-Widget\-::\-Main\-Widget (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{class_main_widget_a326fee5088b7cebaa102ed5332dd59ee}
+\-Main widget constructor. \-Creates and initialize the different modules of the interface and arrange them in a layout. 
+\begin{DoxyParams}{\-Parameters}
+{\em parent} & \-A pointer to the parent \-Q\-Widget (\-The main window) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_main_widget_af232b6a9c032049b200a6c16f6ea651c}{
+\index{\-Main\-Widget@{\-Main\-Widget}!load@{load}}
+\index{load@{load}!MainWidget@{\-Main\-Widget}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void \-Main\-Widget\-::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_main_widget_af232b6a9c032049b200a6c16f6ea651c}
+\-Opens a file dialog for the user to select a \-J\-S\-O\-N file and load the project. \-At the moment, all unsaved changes will be lost. \hypertarget{class_main_widget_a8a47d66fca458e2aa71de66354a7b75a}{
+\index{\-Main\-Widget@{\-Main\-Widget}!save@{save}}
+\index{save@{save}!MainWidget@{\-Main\-Widget}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void \-Main\-Widget\-::save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_main_widget_a8a47d66fca458e2aa71de66354a7b75a}
+\-Save the current project to a \-J\-S\-O\-N file. \-The previous saved file will be overwritten. \-However, if it is the first time the project is saved, \hyperlink{class_main_widget_a8e2b0a1d2401a7f7e0e83a2541a6614b}{save\-As()} will be called instead. \hypertarget{class_main_widget_a8e2b0a1d2401a7f7e0e83a2541a6614b}{
+\index{\-Main\-Widget@{\-Main\-Widget}!save\-As@{save\-As}}
+\index{save\-As@{save\-As}!MainWidget@{\-Main\-Widget}}
+\subsubsection[{save\-As}]{\setlength{\rightskip}{0pt plus 5cm}void \-Main\-Widget\-::save\-As (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_main_widget_a8e2b0a1d2401a7f7e0e83a2541a6614b}
+\-Opens a file dialog and saves the current project to a \-J\-S\-O\-N file. \hypertarget{class_main_widget_abe818c864bcdc88ec88d8dbde2d43023}{
+\index{\-Main\-Widget@{\-Main\-Widget}!set\-Editor\-Range@{set\-Editor\-Range}}
+\index{set\-Editor\-Range@{set\-Editor\-Range}!MainWidget@{\-Main\-Widget}}
+\subsubsection[{set\-Editor\-Range}]{\setlength{\rightskip}{0pt plus 5cm}void \-Main\-Widget\-::set\-Editor\-Range (
+\begin{DoxyParamCaption}
+\item[{int}]{frame\-Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_main_widget_abe818c864bcdc88ec88d8dbde2d43023}
+\-Change the range of frames displayed by the \-Curve \-Editor graph. 
+\begin{DoxyParams}{\-Parameters}
+{\em frame\-Num} & \-An integer value of the number of frame to show. \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Fisheye\-Animator/mainwidget.\-h\item 
+\-Fisheye\-Animator/mainwidget.\-cpp\end{DoxyCompactItemize}

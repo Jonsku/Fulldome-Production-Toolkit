@@ -1,0 +1,83 @@
+\hypertarget{class_q_json_1_1_parser_runnable}{
+\section{\-Q\-Json\-:\-:\-Parser\-Runnable \-Class \-Reference}
+\label{class_q_json_1_1_parser_runnable}\index{\-Q\-Json\-::\-Parser\-Runnable@{\-Q\-Json\-::\-Parser\-Runnable}}
+}
+
+
+\-Convenience class for converting \-J\-S\-O\-N data to \-Q\-Variant objects using a dedicated thread.  
+
+
+
+
+{\ttfamily \#include $<$parserrunnable.\-h$>$}
+
+\subsection*{\-Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_q_json_1_1_parser_runnable_ad54987d36a557e0a38e28a41df46afc0}{parsing\-Finished} (const \-Q\-Variant \&json, bool ok, const \-Q\-String \&error\-\_\-msg)
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_json_1_1_parser_runnable_ab5e5274e5769134afae6e3e650841192}{\-Parser\-Runnable} (\-Q\-Object $\ast$parent=0)
+\item 
+\hypertarget{class_q_json_1_1_parser_runnable_afe9e29ba63839152c333d0f23c22e8e2}{
+void {\bfseries set\-Data} (const \-Q\-Byte\-Array \&data)}
+\label{class_q_json_1_1_parser_runnable_afe9e29ba63839152c333d0f23c22e8e2}
+
+\item 
+\hypertarget{class_q_json_1_1_parser_runnable_a0d501878ba1584c60f5d1ac823b4f7ac}{
+void {\bfseries run} ()}
+\label{class_q_json_1_1_parser_runnable_a0d501878ba1584c60f5d1ac823b4f7ac}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Convenience class for converting \-J\-S\-O\-N data to \-Q\-Variant objects using a dedicated thread. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_q_json_1_1_parser_runnable_ab5e5274e5769134afae6e3e650841192}{
+\index{\-Q\-Json\-::\-Parser\-Runnable@{\-Q\-Json\-::\-Parser\-Runnable}!\-Parser\-Runnable@{\-Parser\-Runnable}}
+\index{\-Parser\-Runnable@{\-Parser\-Runnable}!QJson::ParserRunnable@{\-Q\-Json\-::\-Parser\-Runnable}}
+\subsubsection[{\-Parser\-Runnable}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Json\-::\-Parser\-Runnable\-::\-Parser\-Runnable (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{class_q_json_1_1_parser_runnable_ab5e5274e5769134afae6e3e650841192}
+\-This signal is emitted when the conversion process has been completed 
+\begin{DoxyParams}{\-Parameters}
+{\em data} & contains the \-J\-S\-O\-N data that has to be converted \\
+\hline
+{\em parent} & parent of the object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_q_json_1_1_parser_runnable_ad54987d36a557e0a38e28a41df46afc0}{
+\index{\-Q\-Json\-::\-Parser\-Runnable@{\-Q\-Json\-::\-Parser\-Runnable}!parsing\-Finished@{parsing\-Finished}}
+\index{parsing\-Finished@{parsing\-Finished}!QJson::ParserRunnable@{\-Q\-Json\-::\-Parser\-Runnable}}
+\subsubsection[{parsing\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}void \-Q\-Json\-::\-Parser\-Runnable\-::parsing\-Finished (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-Variant \&}]{json, }
+\item[{bool}]{ok, }
+\item[{const \-Q\-String \&}]{error\-\_\-msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}signal\mbox{]}}}}
+\label{class_q_json_1_1_parser_runnable_ad54987d36a557e0a38e28a41df46afc0}
+\-This signal is emitted when the parsing process has been completed 
+\begin{DoxyParams}{\-Parameters}
+{\em json} & contains the result of the parsing \\
+\hline
+{\em ok} & if a parsing error occurs ok is set to false, otherwise it's set to true. \\
+\hline
+{\em error\-\_\-msg} & contains a string explaining the failure reason \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/qjson/parserrunnable.\-h\end{DoxyCompactItemize}

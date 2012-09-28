@@ -1,0 +1,155 @@
+\hypertarget{class_curves_view}{
+\section{\-Curves\-View \-Class \-Reference}
+\label{class_curves_view}\index{\-Curves\-View@{\-Curves\-View}}
+}
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curves_view_ad6cf06f560c01be87d3b41f1abc14f0e}{
+void {\bfseries change\-Selection} ()}
+\label{class_curves_view_ad6cf06f560c01be87d3b41f1abc14f0e}
+
+\item 
+\hypertarget{class_curves_view_ace3964c0ee3dfd27292fca730eef33d9}{
+void {\bfseries add\-Point} ()}
+\label{class_curves_view_ace3964c0ee3dfd27292fca730eef33d9}
+
+\item 
+\hypertarget{class_curves_view_af6701f458bf23d983dd02ea817c17762}{
+void {\bfseries delete\-Point} ()}
+\label{class_curves_view_af6701f458bf23d983dd02ea817c17762}
+
+\item 
+\hypertarget{class_curves_view_a7a407c5095662ba0c2bf6f0ad443009b}{
+void {\bfseries set\-Bezier\-Interpolation} ()}
+\label{class_curves_view_a7a407c5095662ba0c2bf6f0ad443009b}
+
+\item 
+\hypertarget{class_curves_view_a06744f1bf69cd5c082e439950ace8ee3}{
+void {\bfseries set\-Linear\-Interpolation} ()}
+\label{class_curves_view_a06744f1bf69cd5c082e439950ace8ee3}
+
+\item 
+\hypertarget{class_curves_view_a6f7a92b8c1f82ab2cb898e1b396a0a15}{
+void {\bfseries set\-Constant\-Interpolation} ()}
+\label{class_curves_view_a6f7a92b8c1f82ab2cb898e1b396a0a15}
+
+\item 
+\hypertarget{class_curves_view_af87ba9d0c7802802557a59b6f07293a6}{
+void {\bfseries change\-Scale} (\-Q\-Point\-F scale\-Factor)}
+\label{class_curves_view_af87ba9d0c7802802557a59b6f07293a6}
+
+\item 
+\hypertarget{class_curves_view_a2a0fc565c04dcba10b472d49595be3d9}{
+void {\bfseries zoom\-To} (float z)}
+\label{class_curves_view_a2a0fc565c04dcba10b472d49595be3d9}
+
+\item 
+\hypertarget{class_curves_view_a0dbdfdac1c69405a7704e92b0d0940c5}{
+void {\bfseries set\-Snap} (float s\-X, float s\-Y)}
+\label{class_curves_view_a0dbdfdac1c69405a7704e92b0d0940c5}
+
+\item 
+\hypertarget{class_curves_view_ae4216420ed0fee71a7a9273cd9582369}{
+void {\bfseries move\-Frame\-Cursor} (float at)}
+\label{class_curves_view_ae4216420ed0fee71a7a9273cd9582369}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curves_view_a7bbc3218c8fd748d08d8c46e730696f6}{
+void {\bfseries scale\-Changed} (\-Q\-Point\-F new\-Scale)}
+\label{class_curves_view_a7bbc3218c8fd748d08d8c46e730696f6}
+
+\item 
+\hypertarget{class_curves_view_acc57c305648c305eb00cb74f81967bb9}{
+void {\bfseries zoom\-Changed} (\-Q\-Point\-F, \-Q\-Point\-F)}
+\label{class_curves_view_acc57c305648c305eb00cb74f81967bb9}
+
+\item 
+\hypertarget{class_curves_view_ad0373bcc4d282d5fe0096db50bd010bc}{
+void {\bfseries curves\-Changed} (float min, float max)}
+\label{class_curves_view_ad0373bcc4d282d5fe0096db50bd010bc}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curves_view_acbbebf13484fc83f29fca8d3d8227765}{
+{\bfseries \-Curves\-View} (\-Q\-Object $\ast$parent=0)}
+\label{class_curves_view_acbbebf13484fc83f29fca8d3d8227765}
+
+\item 
+\hypertarget{class_curves_view_a40454b99bb46fb7f6f5f75a4b8507d10}{
+void {\bfseries add\-Curve} (\hyperlink{class_curve_item}{\-Curve\-Item} $\ast$curve)}
+\label{class_curves_view_a40454b99bb46fb7f6f5f75a4b8507d10}
+
+\item 
+\hypertarget{class_curves_view_a4878ee665018fb2727b9c989893e8adb}{
+void {\bfseries set\-Model} (\hyperlink{class_curve_variable_list_model}{\-Curve\-Variable\-List\-Model} $\ast$model)}
+\label{class_curves_view_a4878ee665018fb2727b9c989893e8adb}
+
+\item 
+\hypertarget{class_curves_view_ace4a51eb407babe3390ccaf13c828dfc}{
+void {\bfseries set\-Selection\-Model} (\-Q\-Item\-Selection\-Model $\ast$selection\-Model)}
+\label{class_curves_view_ace4a51eb407babe3390ccaf13c828dfc}
+
+\item 
+\hypertarget{class_curves_view_ae58f96a3da476b9b8538986281c1809a}{
+\hyperlink{class_curve_cursor}{\-Curve\-Cursor} $\ast$ {\bfseries get\-Cursor} () const }
+\label{class_curves_view_ae58f96a3da476b9b8538986281c1809a}
+
+\item 
+\hypertarget{class_curves_view_a09001febfd075650b3dcbf543cf9a5c3}{
+\hyperlink{class_curve_cursor}{\-Curve\-Cursor} $\ast$ {\bfseries get\-Frame\-Cursor} () const }
+\label{class_curves_view_a09001febfd075650b3dcbf543cf9a5c3}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curves_view_a007a89ebd957a37690d7a5939b5c281c}{
+void {\bfseries context\-Menu\-Event} (\-Q\-Graphics\-Scene\-Context\-Menu\-Event $\ast$context\-Menu\-Event)}
+\label{class_curves_view_a007a89ebd957a37690d7a5939b5c281c}
+
+\item 
+\hypertarget{class_curves_view_a30b356ca049b30f74a8bfdc3611e44d9}{
+void {\bfseries mouse\-Move\-Event} (\-Q\-Graphics\-Scene\-Mouse\-Event $\ast$mouse\-Event)}
+\label{class_curves_view_a30b356ca049b30f74a8bfdc3611e44d9}
+
+\item 
+\hypertarget{class_curves_view_a77a9c06fe795cc772152ade4ea024aa2}{
+void {\bfseries wheel\-Event} (\-Q\-Graphics\-Scene\-Wheel\-Event $\ast$event)}
+\label{class_curves_view_a77a9c06fe795cc772152ade4ea024aa2}
+
+\item 
+\hypertarget{class_curves_view_a75c6ea242dceadc149aa61f42bef2794}{
+void {\bfseries mouse\-Release\-Event} (\-Q\-Graphics\-Scene\-Mouse\-Event $\ast$mouse\-Event)}
+\label{class_curves_view_a75c6ea242dceadc149aa61f42bef2794}
+
+\item 
+\hypertarget{class_curves_view_ada2a041554aee5624bee2dabeb4fc3c3}{
+void {\bfseries revert\-Selection} ()}
+\label{class_curves_view_ada2a041554aee5624bee2dabeb4fc3c3}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curves_view_a4624931a6cab3b1b9325601c1ea4981b}{
+\hyperlink{class_curve_handle_item}{\-Curve\-Handle\-Item} $\ast$ {\bfseries last\-Selected}}
+\label{class_curves_view_a4624931a6cab3b1b9325601c1ea4981b}
+
+\item 
+\hypertarget{class_curves_view_a8ba6fc4eef3c4af71246d73945366b63}{
+\hyperlink{class_curve_handle_item}{\-Curve\-Handle\-Item} $\ast$ {\bfseries current\-Selection}}
+\label{class_curves_view_a8ba6fc4eef3c4af71246d73945366b63}
+
+\end{DoxyCompactItemize}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Curve\-Editor/curvesview.\-h\item 
+\-Curve\-Editor/curvesview.\-cpp\end{DoxyCompactItemize}

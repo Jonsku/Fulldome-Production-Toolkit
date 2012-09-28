@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/player">
+        <file>pause_square_grey.png</file>
+        <file>play_square_grey.png</file>
+        <file>forward_square_grey.png</file>
+        <file>back_square_grey.png</file>
+        <file>next_square_grey.png</file>
+        <file>previous_square_grey.png</file>
+    </qresource>
+</RCC>

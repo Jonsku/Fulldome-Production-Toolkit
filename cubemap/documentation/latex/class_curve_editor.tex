@@ -1,0 +1,115 @@
+\hypertarget{class_curve_editor}{
+\section{\-Curve\-Editor \-Class \-Reference}
+\label{class_curve_editor}\index{\-Curve\-Editor@{\-Curve\-Editor}}
+}
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curve_editor_a68eed109fed9e21fbef0711a75e19728}{
+void {\bfseries add\-Variable} (\hyperlink{class_curve_variable}{\-Curve\-Variable} $\ast$var)}
+\label{class_curve_editor_a68eed109fed9e21fbef0711a75e19728}
+
+\item 
+\hypertarget{class_curve_editor_a7426ab13dfa9b2b89ca0cec1026e0764}{
+void {\bfseries set\-Rulers} ()}
+\label{class_curve_editor_a7426ab13dfa9b2b89ca0cec1026e0764}
+
+\item 
+\hypertarget{class_curve_editor_a77c5428bda00c0cbfb8901925bd79dd4}{
+void {\bfseries handle\-Selection} (const \-Q\-Item\-Selection \&selected, const \-Q\-Item\-Selection \&deselected)}
+\label{class_curve_editor_a77c5428bda00c0cbfb8901925bd79dd4}
+
+\item 
+\hypertarget{class_curve_editor_aae747326ca267abbf6f149f47bff3f53}{
+void {\bfseries zoom} (\-Q\-Point\-F factor, \-Q\-Point\-F center\-Point)}
+\label{class_curve_editor_aae747326ca267abbf6f149f47bff3f53}
+
+\item 
+\hypertarget{class_curve_editor_a9fc1b141818a3b8d8e75cd3f5eaebd7a}{
+void {\bfseries set\-View\-Scale} (float x, float y)}
+\label{class_curve_editor_a9fc1b141818a3b8d8e75cd3f5eaebd7a}
+
+\item 
+\hypertarget{class_curve_editor_af2b29495c93b46414e72830fcc88feae}{
+void {\bfseries set\-View\-Scale} (\-Q\-Point\-F scale)}
+\label{class_curve_editor_af2b29495c93b46414e72830fcc88feae}
+
+\item 
+\hypertarget{class_curve_editor_a8505414b15773db973ba4ba514994622}{
+void {\bfseries set\-Snap} (float h\-Snap, float v\-Snap)}
+\label{class_curve_editor_a8505414b15773db973ba4ba514994622}
+
+\item 
+\hypertarget{class_curve_editor_afd153e8fd4800ee3ce087de9d08f4942}{
+void {\bfseries set\-Scene\-Rect} (\-Q\-Rect\-F rect)}
+\label{class_curve_editor_afd153e8fd4800ee3ce087de9d08f4942}
+
+\item 
+\hypertarget{class_curve_editor_ac026c5193866507e45235be245d877f0}{
+void {\bfseries curves\-Have\-Changed} (float min, float max)}
+\label{class_curve_editor_ac026c5193866507e45235be245d877f0}
+
+\item 
+\hypertarget{class_curve_editor_a45f7662564c1d805d051e349835ef123}{
+void {\bfseries set\-Current\-Frame} (float f)}
+\label{class_curve_editor_a45f7662564c1d805d051e349835ef123}
+
+\item 
+\hypertarget{class_curve_editor_a1bf4eb64cf13536c07199c4e12421e78}{
+void {\bfseries set\-Zoom\-From\-Slider} (int v)}
+\label{class_curve_editor_a1bf4eb64cf13536c07199c4e12421e78}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curve_editor_a37529987bfc1254ea5aca2c40d83d012}{
+void {\bfseries view\-Scale\-Changed} (\-Q\-Point\-F v\-Scale)}
+\label{class_curve_editor_a37529987bfc1254ea5aca2c40d83d012}
+
+\item 
+\hypertarget{class_curve_editor_aca2534ad077d6d17e12f1ffda4290096}{
+void {\bfseries curves\-Changed} (float min, float max)}
+\label{class_curve_editor_aca2534ad077d6d17e12f1ffda4290096}
+
+\item 
+\hypertarget{class_curve_editor_a18d0e76d91efc0e1d37ded146fb96e23}{
+void {\bfseries move\-Frame\-Cursor\-To} (float)}
+\label{class_curve_editor_a18d0e76d91efc0e1d37ded146fb96e23}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curve_editor_aa37191635751f2912b127bec7867e50e}{
+{\bfseries \-Curve\-Editor} (\-Q\-Widget $\ast$parent=0)}
+\label{class_curve_editor_aa37191635751f2912b127bec7867e50e}
+
+\item 
+\hypertarget{class_curve_editor_a6819d6b1b94ed2a000fbda156f4044ad}{
+\-Q\-Rect\-F {\bfseries get\-Scaled\-View\-Rect} (float scale\-X, float scale\-Y)}
+\label{class_curve_editor_a6819d6b1b94ed2a000fbda156f4044ad}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curve_editor_acef2db3156e9131f42d4a0288a611269}{
+bool {\bfseries event\-Filter} (\-Q\-Object $\ast$object, \-Q\-Event $\ast$event)}
+\label{class_curve_editor_acef2db3156e9131f42d4a0288a611269}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_curve_editor_adaedf9df699e4ce58adbfb8d98bd8265}{
+bool {\bfseries positive\-Up}}
+\label{class_curve_editor_adaedf9df699e4ce58adbfb8d98bd8265}
+
+\end{DoxyCompactItemize}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Curve\-Editor/curveeditor.\-h\item 
+\-Curve\-Editor/curveeditor.\-cpp\end{DoxyCompactItemize}

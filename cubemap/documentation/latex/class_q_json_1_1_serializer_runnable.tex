@@ -1,0 +1,96 @@
+\hypertarget{class_q_json_1_1_serializer_runnable}{
+\section{\-Q\-Json\-:\-:\-Serializer\-Runnable \-Class \-Reference}
+\label{class_q_json_1_1_serializer_runnable}\index{\-Q\-Json\-::\-Serializer\-Runnable@{\-Q\-Json\-::\-Serializer\-Runnable}}
+}
+
+
+\-Convenience class for converting \-J\-S\-O\-N data to \-Q\-Variant objects using a dedicated thread.  
+
+
+
+
+{\ttfamily \#include $<$serializerrunnable.\-h$>$}
+
+\subsection*{\-Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_q_json_1_1_serializer_runnable_ad1269213d1dc85522dcfccef77edf4e2}{parsing\-Finished} (const \-Q\-Byte\-Array \&serialized, bool ok, const \-Q\-String \&error\-\_\-msg)
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_json_1_1_serializer_runnable_a7098e56db6425e0171f81ce7c16cffa0}{\-Serializer\-Runnable} (\-Q\-Object $\ast$parent=0)
+\item 
+void \hyperlink{class_q_json_1_1_serializer_runnable_ad58725ef18c20db115deb028ed7db80f}{set\-Json\-Object} (const \-Q\-Variant \&json)
+\item 
+\hypertarget{class_q_json_1_1_serializer_runnable_ac4b745722fa882a609209390f0604fa6}{
+void {\bfseries run} ()}
+\label{class_q_json_1_1_serializer_runnable_ac4b745722fa882a609209390f0604fa6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Convenience class for converting \-J\-S\-O\-N data to \-Q\-Variant objects using a dedicated thread. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_q_json_1_1_serializer_runnable_a7098e56db6425e0171f81ce7c16cffa0}{
+\index{\-Q\-Json\-::\-Serializer\-Runnable@{\-Q\-Json\-::\-Serializer\-Runnable}!\-Serializer\-Runnable@{\-Serializer\-Runnable}}
+\index{\-Serializer\-Runnable@{\-Serializer\-Runnable}!QJson::SerializerRunnable@{\-Q\-Json\-::\-Serializer\-Runnable}}
+\subsubsection[{\-Serializer\-Runnable}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Json\-::\-Serializer\-Runnable\-::\-Serializer\-Runnable (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{class_q_json_1_1_serializer_runnable_a7098e56db6425e0171f81ce7c16cffa0}
+\-This signal is emitted when the conversion process has been completed 
+\begin{DoxyParams}{\-Parameters}
+{\em data} & contains the \-J\-S\-O\-N data that has to be converted \\
+\hline
+{\em parent} & parent of the object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_q_json_1_1_serializer_runnable_ad1269213d1dc85522dcfccef77edf4e2}{
+\index{\-Q\-Json\-::\-Serializer\-Runnable@{\-Q\-Json\-::\-Serializer\-Runnable}!parsing\-Finished@{parsing\-Finished}}
+\index{parsing\-Finished@{parsing\-Finished}!QJson::SerializerRunnable@{\-Q\-Json\-::\-Serializer\-Runnable}}
+\subsubsection[{parsing\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}void \-Q\-Json\-::\-Serializer\-Runnable\-::parsing\-Finished (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-Byte\-Array \&}]{serialized, }
+\item[{bool}]{ok, }
+\item[{const \-Q\-String \&}]{error\-\_\-msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}signal\mbox{]}}}}
+\label{class_q_json_1_1_serializer_runnable_ad1269213d1dc85522dcfccef77edf4e2}
+\-This signal is emitted when the serialization process has been completed 
+\begin{DoxyParams}{\-Parameters}
+{\em serialized} & contains the result of the serialization \\
+\hline
+{\em ok} & if a serialization error occurs ok is set to false, otherwise it's set to true. \\
+\hline
+{\em error\-\_\-msg} & contains a string explaining the failure reason \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_q_json_1_1_serializer_runnable_ad58725ef18c20db115deb028ed7db80f}{
+\index{\-Q\-Json\-::\-Serializer\-Runnable@{\-Q\-Json\-::\-Serializer\-Runnable}!set\-Json\-Object@{set\-Json\-Object}}
+\index{set\-Json\-Object@{set\-Json\-Object}!QJson::SerializerRunnable@{\-Q\-Json\-::\-Serializer\-Runnable}}
+\subsubsection[{set\-Json\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void \-Q\-Json\-::\-Serializer\-Runnable\-::set\-Json\-Object (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-Variant \&}]{json}
+\end{DoxyParamCaption}
+)}}
+\label{class_q_json_1_1_serializer_runnable_ad58725ef18c20db115deb028ed7db80f}
+\-Sets the json object to serialize.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em json} & \-Q\-Variant containing the json representation to be serialized \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/qjson/serializerrunnable.\-h\end{DoxyCompactItemize}

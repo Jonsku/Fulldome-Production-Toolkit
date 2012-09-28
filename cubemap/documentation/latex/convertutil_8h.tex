@@ -1,0 +1,109 @@
+\hypertarget{convertutil_8h}{
+\section{\-Common/convertutil.h \-File \-Reference}
+\label{convertutil_8h}\index{\-Common/convertutil.\-h@{\-Common/convertutil.\-h}}
+}
+{\ttfamily \#include $<$\-Q\-String$>$}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{convertutil_8h_a46f4af3bc6187d57458df35b654b6df5}{to\-Degrees} (float radians)
+\item 
+float \hyperlink{convertutil_8h_aabac98ceabb98081b0598f12e333023f}{to\-Radians} (float degrees)
+\item 
+\-Q\-String \hyperlink{convertutil_8h_aff75b0a4f5cd71e06e647d739f00d483}{ms\-To\-H\-M\-S\-M\-S} (long time)
+\item 
+\-Q\-String \hyperlink{convertutil_8h_aa62287db8b55fd8c4d754c0d4d1142cf}{bytes\-To\-K\-B\-M\-B} (long bytes)
+\item 
+float \hyperlink{convertutil_8h_a0e3fc2fb51315d5b34827a1243eb5705}{rc} (float x)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-A collection of inline conversion functions \-These are common useful arithmetic functions to convert angle values, format duration and bytes values into readable strings. 
+
+\subsection{\-Function \-Documentation}
+\hypertarget{convertutil_8h_aa62287db8b55fd8c4d754c0d4d1142cf}{
+\index{convertutil.\-h@{convertutil.\-h}!bytes\-To\-K\-B\-M\-B@{bytes\-To\-K\-B\-M\-B}}
+\index{bytes\-To\-K\-B\-M\-B@{bytes\-To\-K\-B\-M\-B}!convertutil.h@{convertutil.\-h}}
+\subsubsection[{bytes\-To\-K\-B\-M\-B}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String bytes\-To\-K\-B\-M\-B (
+\begin{DoxyParamCaption}
+\item[{long}]{bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{convertutil_8h_aa62287db8b55fd8c4d754c0d4d1142cf}
+\-Converts a value in bytes to \-Kilo or \-Mega bytes 
+\begin{DoxyParams}{\-Parameters}
+{\em bytes} & \-A value in integer bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A \-Q\-String in the format 'amount k\-B/\-M\-B'. 
+\end{DoxyReturn}
+\hypertarget{convertutil_8h_aff75b0a4f5cd71e06e647d739f00d483}{
+\index{convertutil.\-h@{convertutil.\-h}!ms\-To\-H\-M\-S\-M\-S@{ms\-To\-H\-M\-S\-M\-S}}
+\index{ms\-To\-H\-M\-S\-M\-S@{ms\-To\-H\-M\-S\-M\-S}!convertutil.h@{convertutil.\-h}}
+\subsubsection[{ms\-To\-H\-M\-S\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String ms\-To\-H\-M\-S\-M\-S (
+\begin{DoxyParamCaption}
+\item[{long}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{convertutil_8h_aff75b0a4f5cd71e06e647d739f00d483}
+\-Format a duration in milliseconds to the format \-H\-O\-U\-R\-S\-:\-M\-I\-N\-U\-T\-E\-S\-:\-S\-E\-C\-O\-N\-D\-S\-:\-M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S 
+\begin{DoxyParams}{\-Parameters}
+{\em time} & \-A duration in integer milliseconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A \-Q\-String in the format \-H\-O\-U\-R\-S\-:\-M\-I\-N\-U\-T\-E\-S\-:\-S\-E\-C\-O\-N\-D\-S\-:\-M\-I\-L\-L\-I\-S\-E\-C\-O\-N\-D\-S. 
+\end{DoxyReturn}
+\hypertarget{convertutil_8h_a0e3fc2fb51315d5b34827a1243eb5705}{
+\index{convertutil.\-h@{convertutil.\-h}!rc@{rc}}
+\index{rc@{rc}!convertutil.h@{convertutil.\-h}}
+\subsubsection[{rc}]{\setlength{\rightskip}{0pt plus 5cm}float rc (
+\begin{DoxyParamCaption}
+\item[{float}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{convertutil_8h_a0e3fc2fb51315d5b34827a1243eb5705}
+\-Simple arithmetic conversion function used in cube map to fisheye conversion 
+\begin{DoxyParams}{\-Parameters}
+{\em x} & \-The value to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The result of (x/2)+0.5. 
+\end{DoxyReturn}
+\hypertarget{convertutil_8h_a46f4af3bc6187d57458df35b654b6df5}{
+\index{convertutil.\-h@{convertutil.\-h}!to\-Degrees@{to\-Degrees}}
+\index{to\-Degrees@{to\-Degrees}!convertutil.h@{convertutil.\-h}}
+\subsubsection[{to\-Degrees}]{\setlength{\rightskip}{0pt plus 5cm}float to\-Degrees (
+\begin{DoxyParamCaption}
+\item[{float}]{radians}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{convertutil_8h_a46f4af3bc6187d57458df35b654b6df5}
+\-Convert an angle value in radians to a value in degrees. 
+\begin{DoxyParams}{\-Parameters}
+{\em radians} & \-A floating point value of an angle in radians. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The corresponding value in degrees. 
+\end{DoxyReturn}
+\hypertarget{convertutil_8h_aabac98ceabb98081b0598f12e333023f}{
+\index{convertutil.\-h@{convertutil.\-h}!to\-Radians@{to\-Radians}}
+\index{to\-Radians@{to\-Radians}!convertutil.h@{convertutil.\-h}}
+\subsubsection[{to\-Radians}]{\setlength{\rightskip}{0pt plus 5cm}float to\-Radians (
+\begin{DoxyParamCaption}
+\item[{float}]{degrees}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{convertutil_8h_aabac98ceabb98081b0598f12e333023f}
+\-Convert an angle value in degrees to a value in radians. 
+\begin{DoxyParams}{\-Parameters}
+{\em degrees} & \-A floating point value of an angle in degrees. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The corresponding value in radians. 
+\end{DoxyReturn}

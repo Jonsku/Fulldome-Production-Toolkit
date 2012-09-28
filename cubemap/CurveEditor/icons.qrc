@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/curveEditor/icons">
+        <file>closed_eye.png</file>
+        <file>opened_eye.png</file>
+    </qresource>
+</RCC>

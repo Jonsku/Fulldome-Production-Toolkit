@@ -1,0 +1,22 @@
+{
+    "topFace" : "~/burp/faceZ/.png",
+    "bottomFace" : "~/burp/faceZ-/.png",
+    "leftFace" : "~/burp/faceY/.png",
+    "rightFace" : "~/burp/faceY-/.png",
+    "frontFace" : "~/burp/faceX/.png",
+    "backFace" : "~/burp/faceX-/.png",
+    "frameStart" : 1,
+    "frameStop" : 499,
+    "outputFile" : "~/burp/test/render_.png",
+    "outputWidth" : 4094,
+    "antialiasing" : 1,
+    "aaPattern" : "grid",
+    "frames": [
+          {"cubemap": 1, "fov": 180, "pitch" : 0, "yaw" : 0, "roll" : 0, "zoom" : 0},
+          {"cubemap": 1, "fov": 180, "pitch" : 1, "yaw" : 2, "roll" : 3, "zoom" : 4},
+          {"cubemap": 1, "fov": 180, "pitch" : 2, "yaw" : 3, "roll" : 4, "zoom" : 1},
+          {"cubemap": 1, "fov": 180, "pitch" : 3, "yaw" : 4, "roll" : 1, "zoom" : 2},
+          {"cubemap": 1, "fov": 180, "pitch" : 4, "yaw" : 1, "roll" : 2, "zoom" : 3}
+        ]
+}
+

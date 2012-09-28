@@ -1,0 +1,94 @@
+\hypertarget{class_main_window}{
+\section{\-Main\-Window \-Class \-Reference}
+\label{class_main_window}\index{\-Main\-Window@{\-Main\-Window}}
+}
+
+
+{\ttfamily \#include $<$mainwindow.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{\-Main\-Window} (\-Q\-Widget $\ast$parent=0)
+\item 
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\-Main\-Window} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a4e20a4a065fbb0e4d3532a45a0a91425}{close\-Event} (\-Q\-Close\-Event $\ast$event)
+\item 
+void \hyperlink{class_main_window_a49be45fc9b993fdc3afe55d4b6fa0650}{write\-Settings} ()
+\item 
+void \hyperlink{class_main_window_a06476208b8466211f3bb0fcae787052b}{read\-Settings} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-The main window holds a central widget composed of all the modules of the application. \-Its only other role is to save its postion and size between sessions. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{
+\index{\-Main\-Window@{\-Main\-Window}!\-Main\-Window@{\-Main\-Window}}
+\index{\-Main\-Window@{\-Main\-Window}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}\-Main\-Window\-::\-Main\-Window (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}
+\-The main window constructor. \-Initialize the other \-U\-I components, adds a file menu and load previously saved application settings. 
+\begin{DoxyParams}{\-Parameters}
+{\em parent} & \-A ponter to the parent \-Q\-Widget or null. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{
+\index{\-Main\-Window@{\-Main\-Window}!$\sim$\-Main\-Window@{$\sim$\-Main\-Window}}
+\index{$\sim$\-Main\-Window@{$\sim$\-Main\-Window}!MainWindow@{\-Main\-Window}}
+\subsubsection[{$\sim$\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}\-Main\-Window\-::$\sim$\-Main\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}
+\-Does not do anything particular. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_main_window_a4e20a4a065fbb0e4d3532a45a0a91425}{
+\index{\-Main\-Window@{\-Main\-Window}!close\-Event@{close\-Event}}
+\index{close\-Event@{close\-Event}!MainWindow@{\-Main\-Window}}
+\subsubsection[{close\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void \-Main\-Window\-::close\-Event (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Close\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_main_window_a4e20a4a065fbb0e4d3532a45a0a91425}
+\-When the window is closed, current application settings will be automatically saved. \-This method accepts the event passed to it. 
+\begin{DoxyParams}{\-Parameters}
+{\em event} & \-A pointer to the \-Q\-Close\-Event that contains context information about the event. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_window_a06476208b8466211f3bb0fcae787052b}{
+\index{\-Main\-Window@{\-Main\-Window}!read\-Settings@{read\-Settings}}
+\index{read\-Settings@{read\-Settings}!MainWindow@{\-Main\-Window}}
+\subsubsection[{read\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}void \-Main\-Window\-::read\-Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_main_window_a06476208b8466211f3bb0fcae787052b}
+\-Reads the size and position of the window from the application settings. \hypertarget{class_main_window_a49be45fc9b993fdc3afe55d4b6fa0650}{
+\index{\-Main\-Window@{\-Main\-Window}!write\-Settings@{write\-Settings}}
+\index{write\-Settings@{write\-Settings}!MainWindow@{\-Main\-Window}}
+\subsubsection[{write\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}void \-Main\-Window\-::write\-Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_main_window_a49be45fc9b993fdc3afe55d4b6fa0650}
+\-Saves the size and position of the window in the application settings. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Fisheye\-Animator/mainwindow.\-h\item 
+\-Fisheye\-Animator/mainwindow.\-cpp\end{DoxyCompactItemize}

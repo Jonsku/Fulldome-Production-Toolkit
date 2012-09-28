@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/loader">
+        <file>CubeMapDefault.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,110 @@
+\hypertarget{class_q_json_1_1_parser}{
+\section{\-Q\-Json\-:\-:\-Parser \-Class \-Reference}
+\label{class_q_json_1_1_parser}\index{\-Q\-Json\-::\-Parser@{\-Q\-Json\-::\-Parser}}
+}
+
+
+\-Main class used to convert \-J\-S\-O\-N data to \-Q\-Variant objects.  
+
+
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\-Q\-Variant \hyperlink{class_q_json_1_1_parser_adb038b715846ec9615e4e31a36e9b1b6}{parse} (\-Q\-I\-O\-Device $\ast$io, bool $\ast$ok=0)
+\item 
+\-Q\-Variant \hyperlink{class_q_json_1_1_parser_aa85e5deb9e8661e3f6bdbd7dbfc78458}{parse} (const \-Q\-Byte\-Array \&json\-Data, bool $\ast$ok=0)
+\item 
+\-Q\-String \hyperlink{class_q_json_1_1_parser_abb41775f9a7b85cb41274d9537b16bf7}{error\-String} () const 
+\item 
+int \hyperlink{class_q_json_1_1_parser_a737f5f802407638d4927cdffa1304a38}{error\-Line} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Main class used to convert \-J\-S\-O\-N data to \-Q\-Variant objects. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_q_json_1_1_parser_a737f5f802407638d4927cdffa1304a38}{
+\index{\-Q\-Json\-::\-Parser@{\-Q\-Json\-::\-Parser}!error\-Line@{error\-Line}}
+\index{error\-Line@{error\-Line}!QJson::Parser@{\-Q\-Json\-::\-Parser}}
+\subsubsection[{error\-Line}]{\setlength{\rightskip}{0pt plus 5cm}int \-Q\-Json\-::\-Parser\-::error\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_q_json_1_1_parser_a737f5f802407638d4927cdffa1304a38}
+\-This method returns line number where the error occurred \begin{DoxyReturn}{\-Returns}
+the line number where the error occurred 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_q_json_1_1_parser_abb41775f9a7b85cb41274d9537b16bf7}{error\-String} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_json_1_1_parser_abb41775f9a7b85cb41274d9537b16bf7}{
+\index{\-Q\-Json\-::\-Parser@{\-Q\-Json\-::\-Parser}!error\-String@{error\-String}}
+\index{error\-String@{error\-String}!QJson::Parser@{\-Q\-Json\-::\-Parser}}
+\subsubsection[{error\-String}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String \-Q\-Json\-::\-Parser\-::error\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_q_json_1_1_parser_abb41775f9a7b85cb41274d9537b16bf7}
+\-This method returns the error message \begin{DoxyReturn}{\-Returns}
+a \-Q\-String object containing the error message of the last parse operation 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_q_json_1_1_parser_a737f5f802407638d4927cdffa1304a38}{error\-Line} 
+\end{DoxySeeAlso}
+\hypertarget{class_q_json_1_1_parser_adb038b715846ec9615e4e31a36e9b1b6}{
+\index{\-Q\-Json\-::\-Parser@{\-Q\-Json\-::\-Parser}!parse@{parse}}
+\index{parse@{parse}!QJson::Parser@{\-Q\-Json\-::\-Parser}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Variant \-Q\-Json\-::\-Parser\-::parse (
+\begin{DoxyParamCaption}
+\item[{\-Q\-I\-O\-Device $\ast$}]{io, }
+\item[{bool $\ast$}]{ok = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{class_q_json_1_1_parser_adb038b715846ec9615e4e31a36e9b1b6}
+\-Read \-J\-S\-O\-N string from the \-I/\-O \-Device and converts it to a \-Q\-Variant object 
+\begin{DoxyParams}{\-Parameters}
+{\em io} & \-Input output device \\
+\hline
+{\em ok} & if a conversion error occurs, $\ast$ok is set to false; otherwise $\ast$ok is set to true. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+a \-Q\-Variant object generated from the \-J\-S\-O\-N string 
+\end{DoxyReturn}
+\hypertarget{class_q_json_1_1_parser_aa85e5deb9e8661e3f6bdbd7dbfc78458}{
+\index{\-Q\-Json\-::\-Parser@{\-Q\-Json\-::\-Parser}!parse@{parse}}
+\index{parse@{parse}!QJson::Parser@{\-Q\-Json\-::\-Parser}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Variant \-Q\-Json\-::\-Parser\-::parse (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-Byte\-Array \&}]{json\-Data, }
+\item[{bool $\ast$}]{ok = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{class_q_json_1_1_parser_aa85e5deb9e8661e3f6bdbd7dbfc78458}
+\-This is a method provided for convenience. 
+\begin{DoxyParams}{\-Parameters}
+{\em json\-Data} & data containing the \-J\-S\-O\-N object representation \\
+\hline
+{\em ok} & if a conversion error occurs, $\ast$ok is set to false; otherwise $\ast$ok is set to true. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+a \-Q\-Variant object generated from the \-J\-S\-O\-N string 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_q_json_1_1_parser_abb41775f9a7b85cb41274d9537b16bf7}{error\-String} 
+
+\hyperlink{class_q_json_1_1_parser_a737f5f802407638d4927cdffa1304a38}{error\-Line} 
+\end{DoxySeeAlso}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/qjson/parser.\-h\end{DoxyCompactItemize}

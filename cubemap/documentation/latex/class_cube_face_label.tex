@@ -1,0 +1,227 @@
+\hypertarget{class_cube_face_label}{
+\section{\-Cube\-Face\-Label \-Class \-Reference}
+\label{class_cube_face_label}\index{\-Cube\-Face\-Label@{\-Cube\-Face\-Label}}
+}
+
+
+{\ttfamily \#include $<$cubefacelabel.\-h$>$}
+
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_cube_face_label_af08e16abf6ad76b4bde6c39753e76042}{set\-Image\-File} (\-Q\-String file\-Path)
+\item 
+bool \hyperlink{class_cube_face_label_abbee22f6231a97d27a3daaf986507437}{load\-Frame} (int frame)
+\end{DoxyCompactItemize}
+\subsection*{\-Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_cube_face_label_ab2d9d0095f2fe4ef3683b48f13579292}{image\-Changed} (\-Cube\-Face)
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cube_face_label_a25a587b5f8503e3147f9833eccbfa3bc}{\-Cube\-Face\-Label} (\-Cube\-Face cube\-Face, \-Q\-Widget $\ast$parent=0)
+\item 
+\-Cube\-Face \hyperlink{class_cube_face_label_ad9dbd752c2a54a591ee07262f96a0772}{cube\-Face} () const 
+\item 
+bool \hyperlink{class_cube_face_label_ac18ba054024322d64881f47b11e7756b}{is\-Empty} () const 
+\item 
+\-Q\-String \hyperlink{class_cube_face_label_a6bb4956612365dab447e1da245167612}{complete\-File\-Path} ()
+\item 
+\-Q\-Image $\ast$ \hyperlink{class_cube_face_label_ac57414c965f13b9811f9c61a08f47e95}{get\-Image} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_cube_face_label_a6c2c25a1616d630255eacc6bab8b8b82}{
+void {\bfseries paint\-Event} (\-Q\-Paint\-Event $\ast$)}
+\label{class_cube_face_label_a6c2c25a1616d630255eacc6bab8b8b82}
+
+\item 
+\hypertarget{class_cube_face_label_a220a2129941db0b18b8bacffbda4feb0}{
+void {\bfseries drag\-Enter\-Event} (\-Q\-Drag\-Enter\-Event $\ast$event)}
+\label{class_cube_face_label_a220a2129941db0b18b8bacffbda4feb0}
+
+\item 
+\hypertarget{class_cube_face_label_a6c9dfc7b9a3a44492b273f93028ffdeb}{
+void {\bfseries mouse\-Press\-Event} (\-Q\-Mouse\-Event $\ast$event)}
+\label{class_cube_face_label_a6c9dfc7b9a3a44492b273f93028ffdeb}
+
+\item 
+\hypertarget{class_cube_face_label_a0cb00bb33f167763b1136cb8f6cac011}{
+void {\bfseries drop\-Event} (\-Q\-Drop\-Event $\ast$event)}
+\label{class_cube_face_label_a0cb00bb33f167763b1136cb8f6cac011}
+
+\item 
+\hypertarget{class_cube_face_label_aad09c3631a93547c4052c8d615f9f161}{
+void {\bfseries mouse\-Move\-Event} (\-Q\-Mouse\-Event $\ast$event)}
+\label{class_cube_face_label_aad09c3631a93547c4052c8d615f9f161}
+
+\item 
+bool \hyperlink{class_cube_face_label_a8dba7feda537bf5e3a02ce50b87151a4}{change\-Frame} (\-Q\-String file\-Path)
+\item 
+\-Q\-String \hyperlink{class_cube_face_label_adaac9b4e28e38c0ffb17e83181b9c2b9}{get\-Frame\-Full\-Path} (int frame\-Index)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-A holder (a \-Q\-Label) for a face of a cube map. \-This \-U\-I element accepts a drag'n'drop of image files and shows a scaled down version of the image. \-Images can be swaped between two \hyperlink{class_cube_face_label}{\-Cube\-Face\-Label}. \-Information about the source file dimensions and the number of frames in the sequence are displayed on top of the image. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_cube_face_label_a25a587b5f8503e3147f9833eccbfa3bc}{
+\index{\-Cube\-Face\-Label@{\-Cube\-Face\-Label}!\-Cube\-Face\-Label@{\-Cube\-Face\-Label}}
+\index{\-Cube\-Face\-Label@{\-Cube\-Face\-Label}!CubeFaceLabel@{\-Cube\-Face\-Label}}
+\subsubsection[{\-Cube\-Face\-Label}]{\setlength{\rightskip}{0pt plus 5cm}\-Cube\-Face\-Label\-::\-Cube\-Face\-Label (
+\begin{DoxyParamCaption}
+\item[{\-Cube\-Face}]{cube\-Face, }
+\item[{\-Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{class_cube_face_label_a25a587b5f8503e3147f9833eccbfa3bc}
+\-Creates a new \hyperlink{class_cube_face_label}{\-Cube\-Face\-Label} assigned to a specific face of the cube map. 
+\begin{DoxyParams}{\-Parameters}
+{\em cube\-Face} & \-Which face, identified as a \-Cube\-Face, corresponds to this label \\
+\hline
+{\em parent} & \-A pointer to the parent \-Q\-Widget of this label \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_cube_face_label_a8dba7feda537bf5e3a02ce50b87151a4}{
+\index{\-Cube\-Face\-Label@{\-Cube\-Face\-Label}!change\-Frame@{change\-Frame}}
+\index{change\-Frame@{change\-Frame}!CubeFaceLabel@{\-Cube\-Face\-Label}}
+\subsubsection[{change\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}bool \-Cube\-Face\-Label\-::change\-Frame (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{file\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_cube_face_label_a8dba7feda537bf5e3a02ce50b87151a4}
+\-Load a different image. 
+\begin{DoxyParams}{\-Parameters}
+{\em file\-Path} & \-The path to the new image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-True if the image was loaded succesfully 
+\end{DoxyReturn}
+\hypertarget{class_cube_face_label_a6bb4956612365dab447e1da245167612}{
+\index{\-Cube\-Face\-Label@{\-Cube\-Face\-Label}!complete\-File\-Path@{complete\-File\-Path}}
+\index{complete\-File\-Path@{complete\-File\-Path}!CubeFaceLabel@{\-Cube\-Face\-Label}}
+\subsubsection[{complete\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String \-Cube\-Face\-Label\-::complete\-File\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_cube_face_label_a6bb4956612365dab447e1da245167612}
+\begin{DoxyReturn}{\-Returns}
+\-The entire file path to the currently loaded image 
+\end{DoxyReturn}
+\hypertarget{class_cube_face_label_ad9dbd752c2a54a591ee07262f96a0772}{
+\index{\-Cube\-Face\-Label@{\-Cube\-Face\-Label}!cube\-Face@{cube\-Face}}
+\index{cube\-Face@{cube\-Face}!CubeFaceLabel@{\-Cube\-Face\-Label}}
+\subsubsection[{cube\-Face}]{\setlength{\rightskip}{0pt plus 5cm}\-Cube\-Face \-Cube\-Face\-Label\-::cube\-Face (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_cube_face_label_ad9dbd752c2a54a591ee07262f96a0772}
+\begin{DoxyReturn}{\-Returns}
+\-Which face this label is showing, identified as a \-Cube\-Face 
+\end{DoxyReturn}
+\hypertarget{class_cube_face_label_adaac9b4e28e38c0ffb17e83181b9c2b9}{
+\index{\-Cube\-Face\-Label@{\-Cube\-Face\-Label}!get\-Frame\-Full\-Path@{get\-Frame\-Full\-Path}}
+\index{get\-Frame\-Full\-Path@{get\-Frame\-Full\-Path}!CubeFaceLabel@{\-Cube\-Face\-Label}}
+\subsubsection[{get\-Frame\-Full\-Path}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String \-Cube\-Face\-Label\-::get\-Frame\-Full\-Path (
+\begin{DoxyParamCaption}
+\item[{int}]{frame\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_cube_face_label_adaac9b4e28e38c0ffb17e83181b9c2b9}
+\-The entire file path to a specific frame in the sequence 
+\begin{DoxyParams}{\-Parameters}
+{\em frame\-Index} & \-The index of the frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The complete path to the frame 
+\end{DoxyReturn}
+\hypertarget{class_cube_face_label_ac57414c965f13b9811f9c61a08f47e95}{
+\index{\-Cube\-Face\-Label@{\-Cube\-Face\-Label}!get\-Image@{get\-Image}}
+\index{get\-Image@{get\-Image}!CubeFaceLabel@{\-Cube\-Face\-Label}}
+\subsubsection[{get\-Image}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Image$\ast$ \-Cube\-Face\-Label\-::get\-Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_cube_face_label_ac57414c965f13b9811f9c61a08f47e95}
+\begin{DoxyReturn}{\-Returns}
+\-A pointer to the \-Q\-Image corresponding to the image of this face. 
+\end{DoxyReturn}
+\hypertarget{class_cube_face_label_ab2d9d0095f2fe4ef3683b48f13579292}{
+\index{\-Cube\-Face\-Label@{\-Cube\-Face\-Label}!image\-Changed@{image\-Changed}}
+\index{image\-Changed@{image\-Changed}!CubeFaceLabel@{\-Cube\-Face\-Label}}
+\subsubsection[{image\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void \-Cube\-Face\-Label\-::image\-Changed (
+\begin{DoxyParamCaption}
+\item[{\-Cube\-Face}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}signal\mbox{]}}}}
+\label{class_cube_face_label_ab2d9d0095f2fe4ef3683b48f13579292}
+\-Sent when a new image has been loaded for this face 
+\begin{DoxyParams}{\-Parameters}
+{\em \-Which} & face of the cube map changed \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_cube_face_label_ac18ba054024322d64881f47b11e7756b}{
+\index{\-Cube\-Face\-Label@{\-Cube\-Face\-Label}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!CubeFaceLabel@{\-Cube\-Face\-Label}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool \-Cube\-Face\-Label\-::is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_cube_face_label_ac18ba054024322d64881f47b11e7756b}
+\begin{DoxyReturn}{\-Returns}
+\-True if there is no image for this face, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_cube_face_label_abbee22f6231a97d27a3daaf986507437}{
+\index{\-Cube\-Face\-Label@{\-Cube\-Face\-Label}!load\-Frame@{load\-Frame}}
+\index{load\-Frame@{load\-Frame}!CubeFaceLabel@{\-Cube\-Face\-Label}}
+\subsubsection[{load\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}bool \-Cube\-Face\-Label\-::load\-Frame (
+\begin{DoxyParamCaption}
+\item[{int}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_cube_face_label_abbee22f6231a97d27a3daaf986507437}
+\-Load a frame in the sequence 
+\begin{DoxyParams}{\-Parameters}
+{\em frame} & \-The index of the frame to load \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-True if the image was loaded succesfully, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_cube_face_label_af08e16abf6ad76b4bde6c39753e76042}{
+\index{\-Cube\-Face\-Label@{\-Cube\-Face\-Label}!set\-Image\-File@{set\-Image\-File}}
+\index{set\-Image\-File@{set\-Image\-File}!CubeFaceLabel@{\-Cube\-Face\-Label}}
+\subsubsection[{set\-Image\-File}]{\setlength{\rightskip}{0pt plus 5cm}bool \-Cube\-Face\-Label\-::set\-Image\-File (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{file\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_cube_face_label_af08e16abf6ad76b4bde6c39753e76042}
+\-Load a new image 
+\begin{DoxyParams}{\-Parameters}
+{\em file\-Path} & \-The path to the image file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-True if the image was loaded succesfully, false otherwise 
+\end{DoxyReturn}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Cube\-Map\-Loader/cubefacelabel.\-h\item 
+\-Cube\-Map\-Loader/cubefacelabel.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,154 @@
+\hypertarget{class_q_json_1_1_q_object_helper}{
+\section{\-Q\-Json\-:\-:\-Q\-Object\-Helper \-Class \-Reference}
+\label{class_q_json_1_1_q_object_helper}\index{\-Q\-Json\-::\-Q\-Object\-Helper@{\-Q\-Json\-::\-Q\-Object\-Helper}}
+}
+
+
+\-Class used to convert \-Q\-Object into \-Q\-Variant and vivce-\/versa. \-During these operations only the class attributes defined as properties will be considered.  
+
+
+
+
+{\ttfamily \#include $<$qobjecthelper.\-h$>$}
+
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \-Q\-Variant\-Map \hyperlink{class_q_json_1_1_q_object_helper_a46dd6b44ea9e6bf0b3e4534e343e53a2}{qobject2qvariant} (const \-Q\-Object $\ast$object, const \-Q\-String\-List \&ignored\-Properties=\-Q\-String\-List(\-Q\-String(\-Q\-Latin1\-String(\char`\"{}object\-Name\char`\"{}))))
+\item 
+static void \hyperlink{class_q_json_1_1_q_object_helper_a74fbfcda64b4a1d65daaae14a09c3055}{qvariant2qobject} (const \-Q\-Variant\-Map \&variant, \-Q\-Object $\ast$object)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Class used to convert \-Q\-Object into \-Q\-Variant and vivce-\/versa. \-During these operations only the class attributes defined as properties will be considered. 
+
+\-Suppose the declaration of the \-Person class looks like this\-: 
+\begin{DoxyCode}
+ class Person : public QObject
+    {
+      Q_OBJECT
+
+      Q_PROPERTY(QString name READ name WRITE setName)
+      Q_PROPERTY(int phoneNumber READ phoneNumber WRITE setPhoneNumber)
+      Q_PROPERTY(Gender gender READ gender WRITE setGender)
+      Q_PROPERTY(QDate dob READ dob WRITE setDob)
+      Q_ENUMS(Gender)
+
+     public:
+        Person(QObject* parent = 0);
+        ~Person();
+
+        QString name() const;
+        void setName(const QString& name);
+
+        int phoneNumber() const;
+        void setPhoneNumber(const int  phoneNumber);
+
+        enum Gender {Male, Female};
+        void setGender(Gender gender);
+        Gender gender() const;
+
+        QDate dob() const;
+        void setDob(const QDate& dob);
+
+      private:
+        QString m_name;
+        int m_phoneNumber;
+        Gender m_gender;
+        QDate m_dob;
+    };
+\end{DoxyCode}
+
+
+\-The following code will serialize an instance of \-Person to \-J\-S\-O\-N \-:
+
+
+\begin{DoxyCode}
+    Person person;
+    person.setName("Flavio");
+    person.setPhoneNumber(123456);
+    person.setGender(Person::Male);
+    person.setDob(QDate(1982, 7, 12));
+
+    QVariantMap variant = QObjectHelper::qobject2qvariant(&person);
+    Serializer serializer;
+    qDebug() << serializer.serialize( variant);
+\end{DoxyCode}
+
+
+\-The generated output will be\-: 
+\begin{DoxyCode}
+    { "dob" : "1982-07-12", "gender" : 0, "name" : "Flavio", "phoneNumber" : 
+      123456 }
+\end{DoxyCode}
+
+
+\-It's also possible to initialize a \-Q\-Object using the values stored inside of a \-Q\-Variant\-Map.
+
+\-Suppose you have the following \-J\-S\-O\-N data stored into a \-Q\-String\-: 
+\begin{DoxyCode}
+    { "dob" : "1982-07-12", "gender" : 0, "name" : "Flavio", "phoneNumber" : 
+      123456 }
+\end{DoxyCode}
+
+
+\-The following code will initialize an already allocated instance of \-Person using the \-J\-S\-O\-N values\-: 
+\begin{DoxyCode}
+    Parser parser;
+    QVariant variant = parser.parse(json);
+
+    Person person;
+    QObjectHelper::qvariant2qobject(variant.toMap(), &person);
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_q_json_1_1_parser}{\-Parser} 
+
+\hyperlink{class_q_json_1_1_serializer}{\-Serializer} 
+\end{DoxySeeAlso}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_q_json_1_1_q_object_helper_a46dd6b44ea9e6bf0b3e4534e343e53a2}{
+\index{\-Q\-Json\-::\-Q\-Object\-Helper@{\-Q\-Json\-::\-Q\-Object\-Helper}!qobject2qvariant@{qobject2qvariant}}
+\index{qobject2qvariant@{qobject2qvariant}!QJson::QObjectHelper@{\-Q\-Json\-::\-Q\-Object\-Helper}}
+\subsubsection[{qobject2qvariant}]{\setlength{\rightskip}{0pt plus 5cm}static \-Q\-Variant\-Map \-Q\-Json\-::\-Q\-Object\-Helper\-::qobject2qvariant (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-Object $\ast$}]{object, }
+\item[{const \-Q\-String\-List \&}]{ignored\-Properties = {\ttfamily \-Q\-String\-List(\-Q\-String(\-Q\-Latin1\-String(\char`\"{}object\-Name\char`\"{})))}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_q_json_1_1_q_object_helper_a46dd6b44ea9e6bf0b3e4534e343e53a2}
+\-This method converts a \-Q\-Object instance into a \-Q\-Variant\-Map.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em object} & \-The \-Q\-Object instance to be converted. \\
+\hline
+{\em ignored\-Properties} & \-Properties that won't be converted. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_q_json_1_1_q_object_helper_a74fbfcda64b4a1d65daaae14a09c3055}{
+\index{\-Q\-Json\-::\-Q\-Object\-Helper@{\-Q\-Json\-::\-Q\-Object\-Helper}!qvariant2qobject@{qvariant2qobject}}
+\index{qvariant2qobject@{qvariant2qobject}!QJson::QObjectHelper@{\-Q\-Json\-::\-Q\-Object\-Helper}}
+\subsubsection[{qvariant2qobject}]{\setlength{\rightskip}{0pt plus 5cm}static void \-Q\-Json\-::\-Q\-Object\-Helper\-::qvariant2qobject (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-Variant\-Map \&}]{variant, }
+\item[{\-Q\-Object $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_q_json_1_1_q_object_helper_a74fbfcda64b4a1d65daaae14a09c3055}
+\-This method converts a \-Q\-Variant\-Map instance into a \-Q\-Object
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em object} & \-The \-Q\-Object instance to be converted. \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/qjson/qobjecthelper.\-h\end{DoxyCompactItemize}

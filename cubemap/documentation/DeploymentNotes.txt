@@ -1,0 +1,25 @@
+Deploy on mac os x (linking Qt as Frameworks):
+-Use Qt 4.74 Framework (4.7.3 is buggy)
+-Compile FisheyAnimator with QtCreator:
+-->Make sure the build phase is using the qmake of the framework
+-->No DYLD_PATH needed
+-->Compile release
+NOTE: QJson is needed (download from git and build)
+- Go to the folder now containing the CubeAnimator.app
+- run sudo macdeployqt CubeAnimator.app
+--> This will move the Qt framework in the bundle
+-->  If running macdeployqt result in something like : ERROR: no file at "/opt/local/lib/libQtCore.4.dylib"
+----> otool -L CubeAnimator.app/Contents/Frameworks/libqjson.0.dylib 
+This gives something like:
+@executable_path/../Frameworks/libqjson.0.dylib (compatibility version 0.0.0, current version 0.7.1)
+	@executable_path/../Frameworks/libQtCore.4.dylib (compatibility version 4.7.0, current version 4.7.2)
+	/usr/lib/libstdc++.6.dylib (compatibility version 7.0.0, current version 7.9.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 125.2.10)
+----> tell libqjson to also use the framework:
+sudo install_name_tool -change @executable_path/../Frameworks/libQtCore.4.dylib @executable_path/../Frameworks/QtCore.framework/Versions/4/QtCore CubeAnimator.app/Contents/Frameworks/libqjson.0.dylib 
+
+----> Check again with otool if all the path are properly set
+--> Run and enjoy!
+
+Help:
+http://doc.qt.nokia.com/stable/deployment-mac.html

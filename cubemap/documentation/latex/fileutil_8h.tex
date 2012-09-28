@@ -1,0 +1,80 @@
+\hypertarget{fileutil_8h}{
+\section{\-Common/fileutil.h \-File \-Reference}
+\label{fileutil_8h}\index{\-Common/fileutil.\-h@{\-Common/fileutil.\-h}}
+}
+{\ttfamily \#include $<$\-Q\-Debug$>$}\*
+{\ttfamily \#include $<$\-Q\-Map$>$}\*
+{\ttfamily \#include $<$\-Q\-File$>$}\*
+{\ttfamily \#include $<$\-Q\-File\-Info$>$}\*
+{\ttfamily \#include $<$\-Q\-Dir$>$}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\-Q\-Map$<$ int, \-Q\-String $>$ \hyperlink{fileutil_8h_aaf093bc1b6b11595afbdf10625743df5}{get\-Frames\-For\-Mask} (\-Q\-String file\-Path, \-Q\-String mask)
+\item 
+\-Q\-String \hyperlink{fileutil_8h_a82346129b19be3520745b72af79dd5d7}{get\-Mask\-For\-File} (\-Q\-String file\-Name)
+\item 
+\-Q\-Map$<$ int, \-Q\-String $>$ \hyperlink{fileutil_8h_aad4081f9a03a5a5be5646f3f65ea3f60}{get\-Frames\-For\-File} (\-Q\-String file\-Path)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-A collection of inline functions to find frames of a same sequence based on files name. 
+
+\-Cube\-Animator accepts any file name in the format \char`\"{}name.\-extension\char`\"{}. \-Furthermore, it will look for sequence of files named \char`\"{}whatever\-Xwhatever.\-extension\char`\"{} where \-X is a numeral. \-So if you drop a file called \char`\"{}name.\-png\char`\"{} on one of the face, then files like \char`\"{}name0.\-png\char`\"{} or \char`\"{}name21.\-png\char`\"{} will be used in the sequence. \-Also if you load a file called \char`\"{}name1.\-png\char`\"{}, it will detect all files named \char`\"{}name\-X.\-png\char`\"{}. \-If it is called \char`\"{}name2top.\-png\char`\"{}, then it will detect all files named \char`\"{}name\-Xtop.\-png\char`\"{}. \-In case you a have file whose name contains two or more numerals, such as \char`\"{}name1\-\_\-1.\-png\char`\"{}, \-Cube\-Animator will detect files names \char`\"{}name1\-\_\-\-X.\-png\char`\"{} as being part of a the same sequence. 
+
+\subsection{\-Function \-Documentation}
+\hypertarget{fileutil_8h_aad4081f9a03a5a5be5646f3f65ea3f60}{
+\index{fileutil.\-h@{fileutil.\-h}!get\-Frames\-For\-File@{get\-Frames\-For\-File}}
+\index{get\-Frames\-For\-File@{get\-Frames\-For\-File}!fileutil.h@{fileutil.\-h}}
+\subsubsection[{get\-Frames\-For\-File}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Map$<$int, \-Q\-String$>$ get\-Frames\-For\-File (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{file\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{fileutil_8h_aad4081f9a03a5a5be5646f3f65ea3f60}
+\-Returns a sorted list of file names of all the images in the same sequence as file\-Path. 
+\begin{DoxyParams}{\-Parameters}
+{\em file\-Path} & \-A \-Q\-String representing the path to a file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A sorted \-Q\-Map that matches frame position in the sequence to image file names from file\-Path's directory 
+\end{DoxyReturn}
+\hypertarget{fileutil_8h_aaf093bc1b6b11595afbdf10625743df5}{
+\index{fileutil.\-h@{fileutil.\-h}!get\-Frames\-For\-Mask@{get\-Frames\-For\-Mask}}
+\index{get\-Frames\-For\-Mask@{get\-Frames\-For\-Mask}!fileutil.h@{fileutil.\-h}}
+\subsubsection[{get\-Frames\-For\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Map$<$int, \-Q\-String$>$ get\-Frames\-For\-Mask (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{file\-Path, }
+\item[{\-Q\-String}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{fileutil_8h_aaf093bc1b6b11595afbdf10625743df5}
+\-Returns a sorted list of file names of all the images in the same sequence as file\-Path, filtered using mask. 
+\begin{DoxyParams}{\-Parameters}
+{\em file\-Path} & \-A \-Q\-String representing the path to a file \\
+\hline
+{\em mask} & \-A \-Q\-String used as a mask to match files in file\-Path's directory (e.\-g. \char`\"{}top\-\_\-$\ast$.\-png\char`\"{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A sorted \-Q\-Map that matches frame position in the sequence to image file names from file\-Path's directory 
+\end{DoxyReturn}
+\hypertarget{fileutil_8h_a82346129b19be3520745b72af79dd5d7}{
+\index{fileutil.\-h@{fileutil.\-h}!get\-Mask\-For\-File@{get\-Mask\-For\-File}}
+\index{get\-Mask\-For\-File@{get\-Mask\-For\-File}!fileutil.h@{fileutil.\-h}}
+\subsubsection[{get\-Mask\-For\-File}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String get\-Mask\-For\-File (
+\begin{DoxyParamCaption}
+\item[{\-Q\-String}]{file\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{fileutil_8h_a82346129b19be3520745b72af79dd5d7}
+\-Returns a mask (e.\-g. \char`\"{}top\-\_\-$\ast$.\-png\char`\"{}) to find images of the same sequence as file\-Name 
+\begin{DoxyParams}{\-Parameters}
+{\em file\-Name} & \-A file name (extension included) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A mask that can be used to find other images of the same sequence as file\-Name 
+\end{DoxyReturn}
