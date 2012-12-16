@@ -12,7 +12,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 **********************************************************************
 
 ABOUT:
-A project to create open source tools for fulldome video creation.
+An open source tool project for fulldome video creation.
 
 AUTHOR:
 Jonathan Cremieux
@@ -21,5 +21,5 @@ GIT:
 https://github.com/Mimodek/Fulldome-Production-Toolkit
 
 WEB:
-http://j-u-t-t-u.net/fulldome/
+http://j-u-t-t-u.net/
 
