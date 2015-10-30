@@ -18,8 +18,8 @@ AUTHOR:
 Jonathan Cremieux
 
 GIT:
-https://github.com/Mimodek/Fulldome-Production-Toolkit
+https://github.com/Jonsku/Fulldome-Production-Toolkit
 
 WEB:
-http://j-u-t-t-u.net/
+http://krem.io/
 
